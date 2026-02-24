@@ -1,0 +1,31 @@
+---
+description: Use only style guide colors and typography across the app
+globs: "**/*.tsx,**/*.jsx"
+alwaysApply: true
+---
+
+# Style guide — colors and typography
+
+Text and UI across all pages must use **only** the following.
+
+## Colors
+
+Use only design tokens from the style guide (see `/style-guide`):
+
+- **Background / foreground**: `bg-background`, `text-foreground`, `text-background`
+- **Semantic palette**: `text-muted`, `text-subtle`, `text-accent`, `border-border`, `border-border-strong`, `bg-surface`, `bg-surface-hover`, etc.
+
+Do **not** use Tailwind default colors (e.g. `zinc-*`, `gray-*`, `text-black`, `bg-white`) or arbitrary hex/rgb.
+
+## Typography
+
+Use only the typography utility classes defined in `src/app/globals.css`:
+
+- `.text-button` — buttons, nav links (Neue Montreal, 12px, line-height 14px)
+- `.text-section` — section headings (Departure Mono, 12px, line-height 18px, uppercase)
+- `.text-body` — body text (Neue Montreal, 16px, line-height 22px)
+- `.text-display` — hero headline (Neue Montreal, 28px, line-height 34px, white)
+
+Do **not** use raw Tailwind text sizes (e.g. `text-sm`, `text-lg`, `text-xl`, `text-2xl`) for content. Combine typography classes with color tokens: e.g. `text-body text-gray-blue`, `text-section text-foreground`.
+
+Font families: use `font-sans` (Neue Montreal) or `font-mono` (Departure Mono) only when needed in addition to a `.text-*` typography class (those classes already set font-family).

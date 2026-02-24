@@ -1,0 +1,21 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@theme",
+      "description": "Tailwind v4: define theme tokens (colors, fonts, etc.) for use in utilities."
+    },
+    {
+      "name": "@layer",
+      "description": "Tailwind: place styles in a layer (base, components, utilities)."
+    },
+    {
+      "name": "@config",
+      "description": "Tailwind v4: path to tailwind config file."
+    },
+    {
+      "name": "@source",
+      "description": "Tailwind v4: include additional source files for scanning."
+    }
+  ]
+}

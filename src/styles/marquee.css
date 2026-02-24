@@ -1,0 +1,19 @@
+/* Moving image gallery – marquee animation */
+
+:root {
+  /* Duration for one full loop in seconds (lower = faster) */
+  --marquee-duration: 20;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+.animate-marquee {
+  animation: marquee calc(var(--marquee-duration, 30) * 1s) linear infinite;
+}
