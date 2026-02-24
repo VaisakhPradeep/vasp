@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { useState, useEffect, useCallback } from "react";
 
 const DRIBBBLE_BASE = "/images/dribbble";
@@ -149,7 +149,7 @@ export function DribbbleGrid() {
                 preload="metadata"
               />
             ) : (
-              <Image
+              <ExportedImage
                 src={item.src}
                 alt={`Dribbble shot ${index + 1}`}
                 fill
@@ -227,7 +227,7 @@ export function DribbbleGrid() {
                   playsInline
                 />
               ) : (
-                <Image
+                <ExportedImage
                   src={active.src}
                   alt="Dribbble shot"
                   fill

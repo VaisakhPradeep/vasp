@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { DottedLink } from "@/components/ui/DottedLink";
 
 export const metadata = {
@@ -13,7 +13,7 @@ export default function AboutPage() {
       <section className="section-pad">
         <div className="flex flex-col gap-8">
           <div className="flex">
-            <Image
+            <ExportedImage
               src="/images/profile_photo.jpeg"
               alt="Vaisakh Pradeep"
               width={280}

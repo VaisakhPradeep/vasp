@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { useState, useCallback } from "react";
 
 export type GalleryImage = {
@@ -86,7 +86,7 @@ function GalleryCell({
           aria-label={item.alt}
         />
       ) : (
-        <Image
+        <ExportedImage
           src={item.src}
           alt={item.alt}
           fill

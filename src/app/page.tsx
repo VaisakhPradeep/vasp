@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { WorksSectionGallery } from "@/components/WorksSectionGallery";
 import Link from "next/link";
 import { DottedButton } from "@/components/ui/DottedButton";
@@ -10,7 +10,7 @@ export default function Home() {
       className="max-w-page divide-border mx-auto flex w-full flex-col divide-y"
     >
       <section>
-        <Image
+        <ExportedImage
           src="/images/zen_garden.png"
           alt="Serene Japanese garden with torii gate, pond, and bamboo"
           width={1200}

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { useState, useEffect, useCallback, useRef } from "react";
 
 function VideoSequencePlayer({
@@ -176,7 +176,7 @@ export function ImageGallery({
             />
           </div>
         ) : (
-          <Image
+          <ExportedImage
             src={activeMedia.src}
             alt={activeMedia.alt}
             width={mainWidth}
@@ -184,7 +184,6 @@ export function ImageGallery({
             className="h-auto w-full object-cover transition-opacity
               group-hover:opacity-95"
             sizes="(max-width: 520px) 100vw, 520px"
-            quality={quality}
             priority
           />
         )}
@@ -236,13 +235,12 @@ export function ImageGallery({
                   playsInline
                 />
               ) : (
-                <Image
+                <ExportedImage
                   src={activeMedia.src}
                   alt={activeMedia.alt}
                   fill
                   className="object-contain"
                   sizes="90vw"
-                  quality={quality}
                 />
               )}
             </div>
@@ -287,13 +285,12 @@ export function ImageGallery({
                     preload="metadata"
                   />
                 ) : (
-                  <Image
+                  <ExportedImage
                     src={"src" in img ? img.src : ""}
                     alt={img.alt}
                     fill
                     className="object-cover"
                     sizes="(max-width: 520px) 25vw, 124px"
-                    quality={quality}
                   />
                 )}
               </button>

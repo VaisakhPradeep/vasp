@@ -20,6 +20,10 @@
 # production
 /build
 
+# next-image-export-optimizer (build-time cache)
+**/nextImageExportOptimizer/
+**/next-image-export-optimizer-hashes.json
+
 # misc
 .DS_Store
 *.pem
