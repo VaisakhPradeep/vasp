@@ -191,6 +191,11 @@ body {
   padding-block: 1.5rem; /* 24px / py-6 */
 }
 
+/* Section padding – left and right only */
+@utility section-pad-x {
+  padding-inline: 1.25rem; /* 20px / px-5 */
+}
+
 /* Typography utilities – use only these + style-guide colors for text across the app */
 .text-label {
   font-family: var(--font-sans);
@@ -231,4 +236,3 @@ body {
   background-size: 4px 4px;
   mix-blend-mode: overlay;
 }
-

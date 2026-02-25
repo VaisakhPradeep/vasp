@@ -12,14 +12,23 @@ export default function AboutPage() {
     <main className="max-w-page mx-auto flex w-full flex-col">
       <section className="section-pad">
         <div className="flex flex-col gap-8">
-          <div className="flex">
+          <div className="flex items-end gap-6">
             <ExportedImage
               src="/images/profile_photo.jpeg"
               alt="Vaisakh Pradeep"
               width={280}
               height={280}
-              className="aspect-square w-[200px] object-cover sm:w-[120px]"
+              className="aspect-square w-[120px] object-cover"
             />
+            <div className="flex flex-col items-start gap-1">
+              <span className="text-label text-subtle">
+                8+ years as product designer
+              </span>
+              <span className="text-label text-subtle">
+                Masters in Design from IISc Bangalore
+              </span>
+              <span className="text-label text-subtle">From Kerala, India</span>
+            </div>
           </div>
           <div className="space-y-6">
             <p className="text-display text-subtle">
