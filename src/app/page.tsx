@@ -1,4 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
+import { HeroIntro } from "@/components/HeroIntro";
+import { HeroSection } from "@/components/HeroSection";
 import { WorksSectionGallery } from "@/components/WorksSectionGallery";
 import Link from "next/link";
 import { DottedButton } from "@/components/ui/DottedButton";
@@ -9,25 +11,41 @@ export default function Home() {
     <main
       className="max-w-page divide-border mx-auto flex w-full flex-col divide-y"
     >
-      <section>
-        <ExportedImage
-          src="/images/zen_garden.png"
-          alt="Serene Japanese garden with torii gate, pond, and bamboo"
-          width={1200}
-          height={800}
-          className="w-full object-cover"
-          priority
+      <HeroSection className="group relative overflow-hidden">
+        <div
+          className="hero-image-wrap relative w-full overflow-hidden"
+          style={{ ["--hero-glitch-bg" as string]: "url(/images/zen_garden.png)" }}
+        >
+          {/* In-flow image sets wrapper height (same dimensions as before) */}
+          <ExportedImage
+            src="/images/zen_garden.png"
+            alt="Serene Japanese garden with torii gate, pond, and bamboo"
+            width={1200}
+            height={800}
+            className="block w-full object-cover opacity-0"
+            priority
+          />
+          <div className="hero-glitch" aria-hidden>
+            <div className="hero-glitch__img" />
+            <div className="hero-glitch__img" />
+            <div className="hero-glitch__img" />
+            <div className="hero-glitch__img" />
+            <div className="hero-glitch__img" />
+          </div>
+        </div>
+        {/* Dither overlay: dot pattern on hover */}
+        <div
+          className="hero-dither-overlay pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+          aria-hidden
         />
         <div className="section-pad">
-          <p className="text-section-label mb-2">
-            HI, I&apos;M VAISAKH PRADEEP
-          </p>
+          <HeroIntro className="text-section-label mb-2" />
           <h1 className="text-display text-accent">
             A software designer crafting tasteful user experiences, and this is
             my little garden on the internet.
           </h1>
         </div>
-      </section>
+      </HeroSection>
 
       <section className="section-pad">
         <h2 className="text-section-label mb-5">Currently</h2>

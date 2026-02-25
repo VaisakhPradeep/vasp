@@ -220,3 +220,15 @@ body {
   letter-spacing: -0.02em;
   color: var(--color-accent);
 }
+
+/* Hero image hover: dither overlay (used with grayscale on image) */
+.hero-dither-overlay {
+  background-image: radial-gradient(
+    circle at center,
+    var(--color-foreground) 1px,
+    transparent 1px
+  );
+  background-size: 4px 4px;
+  mix-blend-mode: overlay;
+}
+

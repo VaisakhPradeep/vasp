@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import "./globals.css";
+import "./glitch.css";
 import "@/styles/marquee.css";
 
 export const metadata: Metadata = {

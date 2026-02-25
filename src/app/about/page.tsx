@@ -26,7 +26,7 @@ export default function AboutPage() {
               Hi, I&apos;m Vaisakh Pradeep.
             </p>
             <p className="text-section-label text-subtle">
-              I&apos;m a product designer who builds
+              A product designer who builds
             </p>
             <p className="text-body text-subtle">
               I&apos;ve always been a tinkerer at heart. For the past eight
@@ -83,16 +83,24 @@ export default function AboutPage() {
           <div className="space-y-4">
             <h2 className="text-section-label text-subtle">Current Chapter</h2>
             <p className="text-body text-subtle">
-              For the last five years, I&apos;ve been working remotely with
-              North American companies, solving complex problems from my home
-              office. Currently, I&apos;m at{" "}
+              For the last five years, I have been working remotely for North
+              American companies, solving complex problems from my home office.
+              For the past three years, I have been at{" "}
               <DottedLink openInNewTab href="https://jora.ai">
                 Jora
               </DottedLink>
-              , where I&apos;m fortunate to work with an incredible team.
-              We&apos;re a remote group, but we meet up in Tokyo once a year to
-              sync up and explore the city—which is easily one of the highlights
-              of my year.
+              . I feel incredibly fortunate to be part of such a stellar team,
+              most of whom are based in Tokyo.
+            </p>
+            <p className="text-body text-subtle">
+              Working from home can be a bit lonely at times, and my day to day
+              social life is definitely on the quieter side. It is one of the
+              trade-offs of the remote life that I still haven&apos;t quite
+              figured out. However, we make up for it in a big way. Once a year,
+              I fly out to Tokyo to meet the rest of the team. We spend the week
+              syncing up and eating our way through the city. Those trips are
+              easily the highlight of my year. They recharge my social battery
+              just enough to head back to my desk and get back to building.
             </p>
           </div>
 
