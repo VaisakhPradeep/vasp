@@ -2,7 +2,7 @@ import { DottedLink } from "@/components/ui/DottedLink";
 import { DribbbleGrid } from "@/components/DribbbleGrid";
 
 export const metadata = {
-  title: "Garage — VASP Design",
+  title: "Garage — Vaisakh Pradeep",
   description: "Dribbble shots and experiments.",
 };
 

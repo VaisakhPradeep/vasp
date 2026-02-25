@@ -2,7 +2,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { DottedLink } from "@/components/ui/DottedLink";
 
 export const metadata = {
-  title: "About — VASP Design",
+  title: "About — Vaisakh Pradeep",
   description:
     "Vaisakh Pradeep — product designer who builds. 0 to 1 product design, Masters in Design (IISc Bangalore). Remote with North American teams.",
 };

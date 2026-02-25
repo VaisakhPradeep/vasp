@@ -3,6 +3,12 @@ import { DottedLink } from "@/components/ui/DottedLink";
 import { WorksHeader } from "@/components/layout/WorksHeader";
 import { ImageGallery } from "@/components/ImageGallery";
 
+export const metadata = {
+  title: "Works — Vaisakh Pradeep",
+  description:
+    "Selected product design and side projects — Jora, Ask Cal, Futicons, ImageHues, and more.",
+};
+
 type WorkMetadata = Record<string, string>;
 
 type WorkItem = {

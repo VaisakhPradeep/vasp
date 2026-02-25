@@ -12,11 +12,11 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vasp.design";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "VASP Design",
-  description: "VASP design system and style guide",
+  title: "Vaisakh Pradeep",
+  description: "Personal website of Vaisakh Pradeep",
   openGraph: {
-    title: "VASP Design",
-    description: "VASP design system and style guide",
+    title: "Vaisakh Pradeep",
+    description: "Personal website of Vaisakh Pradeep",
     images: [
       {
         url: ogImage,
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VASP Design",
-    description: "VASP design system and style guide",
+    title: "Vaisakh Pradeep",
+    description: "Personal website of Vaisakh Pradeep",
     images: [ogImage],
   },
   icons: {

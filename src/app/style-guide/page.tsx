@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Style Guide — VASP Design",
+  title: "Style Guide — Vaisakh Pradeep",
   description: "Design system style guide: colors, typography, and components.",
 };
 

@@ -6,6 +6,12 @@ import Link from "next/link";
 import { DottedButton } from "@/components/ui/DottedButton";
 import { DottedLink } from "@/components/ui/DottedLink";
 
+export const metadata = {
+  title: "Vaisakh Pradeep",
+  description:
+    "Personal website of Vaisakh Pradeep — software designer crafting tasteful user experiences. Portfolio, about, and side projects.",
+};
+
 export default function Home() {
   return (
     <main
