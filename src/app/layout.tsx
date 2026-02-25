@@ -7,10 +7,31 @@ import "./glitch.css";
 import "@/styles/marquee.css";
 
 const favicons = "/images/favicons";
+const ogImage = "/images/zen_garden.png";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vasp.design";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "VASP Design",
   description: "VASP design system and style guide",
+  openGraph: {
+    title: "VASP Design",
+    description: "VASP design system and style guide",
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 800,
+        alt: "Serene Japanese garden with torii gate, pond, and bamboo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "VASP Design",
+    description: "VASP design system and style guide",
+    images: [ogImage],
+  },
   icons: {
     icon: [
       { url: `${favicons}/favicon-32x32.png`, sizes: "32x32", type: "image/png" },
